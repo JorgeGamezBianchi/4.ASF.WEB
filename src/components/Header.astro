@@ -1,0 +1,130 @@
+---
+// ====================================================================================
+// COMPONENTE ASTRO: src/components/Header.astro
+// ====================================================================================
+
+const currentPath = Astro.url.pathname;
+
+// Función para determinar si un enlace está activo
+const isCurrent = (path: string) => {
+  if (path === '/') return currentPath === '/' || currentPath === '';
+  return currentPath.startsWith(path);
+};
+
+const navLinks = [
+  { href: '/', label: 'Inicio' },
+  { href: '/nosotros', label: 'Quienes Somos' },
+  { href: '/servicios', label: 'Servicios' },
+  { href: '/clientes', label: 'Nuestros Clientes' },
+];
+---
+
+<header class="sticky top-0 z-50 bg-[#0a142f]/95 backdrop-blur-md border-b border-[#1b2d56] shadow-lg">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-20">
+      
+      <!-- LOGO Y NOMBRE DE LA EMPRESA (IMAGEN AJUSTADA) -->
+      <a href="/" class="select-none flex items-center group text-decoration-none py-1">
+        <img 
+          src="/images/softlution!.png" 
+          alt="Softlution! Automatización Industrial" 
+          class="h-11 sm:h-12 md:h-13 w-auto max-h-14 object-contain transition duration-200 group-hover:brightness-110 drop-shadow-sm" 
+        />
+      </a>
+
+      <!-- NAVEGACIÓN PRINCIPAL (ESCRITORIO) -->
+      <nav class="hidden md:flex items-center space-x-1 lg:space-x-3 text-xs font-bold uppercase tracking-wider">
+        {navLinks.map((link) => (
+          <a
+            href={link.href}
+            class={`px-3 py-2 transition border-b-2 ${
+              isCurrent(link.href)
+                ? 'text-cyan-400 border-cyan-400'
+                : 'text-slate-300 border-transparent hover:text-cyan-400'
+            }`}
+          >
+            {link.label}
+          </a>
+        ))}
+
+        <!-- BOTÓN LLAMATIVO: CONTACTO (ALTO CONTRASTE CIAN) -->
+        <a
+          href="/contacto"
+          class={`ml-2 sm:ml-4 inline-flex items-center justify-center px-5 py-2.5 rounded font-extrabold uppercase tracking-wider text-xs transition duration-200 shadow-md transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer ${
+            currentPath.startsWith('/contacto')
+              ? 'bg-cyan-500 text-slate-950 ring-2 ring-cyan-300 shadow-cyan-500/40'
+              : 'bg-cyan-400 hover:bg-cyan-300 text-slate-950 shadow-cyan-400/25'
+          }`}
+        >
+          CONTACTO
+        </a>
+      </nav>
+
+      <!-- BOTÓN MENÚ MÓVIL (HAMBURGUESA) -->
+      <div class="flex items-center md:hidden">
+        <button 
+          id="mobile-menu-toggle"
+          type="button" 
+          class="text-slate-300 hover:text-cyan-400 p-2 focus:outline-hidden"
+          aria-label="Abrir menú de navegación"
+        >
+          <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <line x1="4" x2="20" y1="12" y2="12"/>
+            <line x1="4" x2="20" y1="6" y2="6"/>
+            <line x1="4" x2="20" y1="18" y2="18"/>
+          </svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <line x1="18" x2="6" y1="6" y2="18"/>
+            <line x1="6" x2="18" y1="6" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PANEL DE NAVEGACIÓN MÓVIL -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-[#1b2d56] bg-[#0a142f] px-4 pt-2 pb-6 space-y-1 text-sm font-semibold shadow-inner">
+    {navLinks.map((link) => (
+      <a 
+        href={link.href}
+        class={`block w-full text-left px-3 py-2.5 rounded transition ${
+          isCurrent(link.href) ? 'text-cyan-400 bg-[#12224d] font-bold' : 'text-slate-300 hover:bg-[#12224d]'
+        }`}
+      >
+        {link.label}
+      </a>
+    ))}
+    
+    <div class="pt-3 mt-2 border-t border-[#1b2d56]">
+      <a 
+        href="/contacto"
+        class="flex items-center justify-center w-full px-4 py-3 rounded bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-extrabold uppercase tracking-wider text-xs shadow-md transition duration-200"
+      >
+        CONTACTO
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  if (toggleBtn && mobileMenu && menuIcon && closeIcon) {
+    toggleBtn.addEventListener('click', () => {
+      const isExpanded = !mobileMenu.classList.contains('hidden');
+      if (isExpanded) {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      } else {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+      }
+    });
+  }
+</script>

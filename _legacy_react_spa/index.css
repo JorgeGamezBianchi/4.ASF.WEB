@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  body {
+    background-color: #f8f9fa;
+    color: #444444;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #222222;
+    font-weight: 600;
+  }
+}
+
+/* Clases de estilo réplica Spicepress / Chilly */
+.theme-red {
+  color: #ce1b28;
+}
+
+.bg-theme-red {
+  background-color: #ce1b28;
+}
+
+.hover\:bg-theme-red-dark:hover {
+  background-color: #b3131f;
+}
+
+.border-theme-red {
+  border-color: #ce1b28;
+}
+
+.drop-cap {
+  float: left;
+  font-size: 2.25rem;
+  line-height: 1;
+  font-weight: 700;
+  padding-right: 0.35rem;
+  color: #222222;
+}

@@ -1,0 +1,369 @@
+---
+// ====================================================================================
+// PÁGINA: src/pages/servicios.astro
+// ====================================================================================
+
+import Layout from '../layouts/Layout.astro';
+import PageBanner from '../components/PageBanner.astro';
+import ImagePlaceholder from '../components/ImagePlaceholder.astro';
+---
+
+<Layout 
+  title="Softlution! – Servicios | Automatización e Ingeniería Industrial"
+  description="Soluciones integrales de ingeniería electromecánica: automatización de procesos, tableros PLC, SCADA, instalaciones eléctricas de baja tensión, soluciones mecánicas y modelado BIM."
+>
+  <PageBanner title="Servicios" />
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-10 sm:space-y-12">
+    
+    <!-- ================= 1. ENCABEZADO Y PROPUESTA DE VALOR ================= -->
+    <section class="bg-[#0b1736] border border-[#1c305c] p-6 sm:p-10 rounded-lg shadow-xl">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 border-b border-[#1c305c] pb-6 mb-6">
+        <div>
+          <span class="inline-block px-3 py-1 bg-cyan-950/80 border border-cyan-400/40 text-cyan-300 text-xs font-bold uppercase tracking-wider rounded-full mb-3 shadow-xs">
+            Portafolio de Soluciones Electromecánicas
+          </span>
+          <h1 class="text-2xl sm:text-4xl font-bold text-white tracking-tight">
+            Productos & Servicios Industriales
+          </h1>
+          <p class="text-xs sm:text-sm text-slate-400 mt-2 max-w-2xl leading-relaxed">
+            Somos una empresa integradora de sistemas de instrumentación y control de procesos industriales, especializada en ingeniería, ejecución y administración de proyectos electromecánicos.
+          </p>
+        </div>
+        <div class="shrink-0">
+          <ImagePlaceholder 
+            label="Logo ASF (ASF-LOGO.png)" 
+            width="w-32 sm:w-36" 
+            height="h-20 sm:h-24" 
+            note="Softlution"
+          />
+        </div>
+      </div>
+
+      <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
+        <p>
+          <span class="drop-cap text-cyan-400">A</span>poyamos a <strong class="text-white">Project Managers</strong> y equipos de ingeniería industrial en la correcta planeación, integración y ejecución de proyectos, asegurando estricto cumplimiento técnico, control de riesgos, seguridad industrial y máxima eficiencia operativa.
+        </p>
+
+        <!-- Lema Rector de Servicios -->
+        <blockquote class="p-4 sm:p-5 bg-[#061026] border-l-4 border-cyan-400 rounded-r text-slate-200 italic text-sm sm:text-base border-y border-r border-[#1c305c]">
+          “Integramos ingeniería, tecnología y ejecución para convertir proyectos industriales en resultados confiables.”
+          <span class="block text-xs not-italic font-bold text-cyan-400 mt-1.5 uppercase tracking-wider">
+            Un solo integrador, un solo responsable, total control del proyecto.
+          </span>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ================= 2. ESPECIALIDADES Y SERVICIOS PRINCIPALES ================= -->
+    <div class="space-y-8">
+      
+      <!-- SERVICIO 1: DESARROLLO DE INGENIERÍAS -->
+      <section class="bg-[#0b1736] border border-[#1c305c] rounded-lg p-6 sm:p-8 shadow-xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 px-2.5 py-1 bg-cyan-950/80 border border-cyan-400/40 text-cyan-300 text-xs font-bold uppercase rounded">
+              Especialidad 01
+            </div>
+            <h2 class="text-xl sm:text-2xl font-bold text-white">
+              Desarrollo de Ingenierías
+            </h2>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Contamos con personal altamente calificado dedicado al <strong class="text-white font-semibold">Diseño, Ingeniería, Instalación, Asistencia técnica y Mantenimiento de Equipamiento Industrial</strong>. Ofrecemos soluciones integrales basadas en las nuevas tendencias tecnológicas con el claro objetivo de transformar las necesidades y metas de nuestros clientes en proyectos eficientes y con costo optimizado.
+            </p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300 pt-2">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                Diseño conceptual, básico y de detalle
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                Ingeniería de instrumentación y control
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                Supervisión técnica de obra
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                Asistencia técnica y comisionamiento
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-5">
+            <ImagePlaceholder 
+              label="Desarrollo de Ingenierías (Plano/Isométrico)" 
+              height="h-56 sm:h-64" 
+              note="Diseño 3D de tanques y líneas de proceso"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICIO 2: AUTOMATIZACIÓN DE PROCESOS -->
+      <section class="bg-[#0b1736] border border-[#1c305c] rounded-lg p-6 sm:p-8 shadow-xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5 order-2 lg:order-1">
+            <ImagePlaceholder 
+              label="Automatización de Procesos (SCADA/HMI)" 
+              height="h-56 sm:h-64" 
+              note="Control de silos, ruteo y producción por lotes"
+            />
+          </div>
+          <div class="lg:col-span-7 space-y-4 order-1 lg:order-2">
+            <div class="inline-flex items-center gap-2 px-2.5 py-1 bg-blue-950/80 border border-blue-400/40 text-blue-300 text-xs font-bold uppercase rounded">
+              Especialidad 02
+            </div>
+            <h2 class="text-xl sm:text-2xl font-bold text-white">
+              Automatización de Procesos
+            </h2>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Softlution! cuenta con amplia experiencia en el desarrollo, programación, instalación y puesta en marcha de sistemas automatizados en industrias de alta exigencia como la <strong class="text-white font-semibold">Química</strong> y la de <strong class="text-white font-semibold">Alimentos y Bebidas</strong>.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs text-slate-300">
+              <div class="p-3 bg-[#071126] rounded border border-[#1c305c]">
+                <p class="font-bold text-white mb-1">Producción por Lotes (Batch)</p>
+                <p class="text-slate-400 text-[11px]">Dosificación precisa, bacheo de recetas e integración con ERP/MES.</p>
+              </div>
+              <div class="p-3 bg-[#071126] rounded border border-[#1c305c]">
+                <p class="font-bold text-white mb-1">Ruteo de Fluidos y Sólidos</p>
+                <p class="text-slate-400 text-[11px]">Sistemas de válvulas y silos con supervisión gráfica continua.</p>
+              </div>
+              <div class="p-3 bg-[#071126] rounded border border-[#1c305c]">
+                <p class="font-bold text-white mb-1">Extrusión y Líneas Continuas</p>
+                <p class="text-slate-400 text-[11px]">Sincronización de velocidad, torque, presión y temperatura.</p>
+              </div>
+              <div class="p-3 bg-[#071126] rounded border border-[#1c305c]">
+                <p class="font-bold text-white mb-1">Sistemas SCADA & HMI</p>
+                <p class="text-slate-400 text-[11px]">Wonderware, FactoryTalk y monitoreo en tiempo real.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICIO 3: INSTALACIONES ELÉCTRICAS -->
+      <section class="bg-[#0b1736] border border-[#1c305c] rounded-lg p-6 sm:p-8 shadow-xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 px-2.5 py-1 bg-cyan-950/80 border border-cyan-400/40 text-cyan-300 text-xs font-bold uppercase rounded">
+              Especialidad 03
+            </div>
+            <h2 class="text-xl sm:text-2xl font-bold text-white">
+              Instalaciones Eléctricas Industriales
+            </h2>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Personal altamente capacitado en la elaboración de ingeniería e instalaciones eléctricas para aplicaciones industriales en <strong class="text-white font-semibold">baja tensión</strong>. Diseñamos e implementamos cumpliendo rigurosamente con normas nacionales e internacionales aplicables a cada entorno productivo.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 pt-2">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Centros de Control de Motores (CCM) y distribución eléctrica.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Variadores de velocidad (VFD), servomotores y arrancadores suaves.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Armado, cableado, etiquetado y pruebas de tableros de control PLC.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Canalización en charola, tubería conduit y cableado estructurado industrial.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-5">
+            <ImagePlaceholder 
+              label="Instalaciones Eléctricas (Tableros/CCM)" 
+              height="h-56 sm:h-64" 
+              note="Gabinetes y acometidas en baja tensión"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICIO 4: SOLUCIONES MECÁNICAS Y PAILERÍA -->
+      <section class="bg-[#0b1736] border border-[#1c305c] rounded-lg p-6 sm:p-8 shadow-xl">
+        <div class="border-b border-[#1c305c] pb-4 mb-6">
+          <div class="inline-flex items-center gap-2 px-2.5 py-1 bg-blue-950/80 border border-blue-400/40 text-blue-300 text-xs font-bold uppercase rounded mb-2">
+            Especialidad 04
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold text-white">
+            Soluciones Mecánicas, Pailería y Montajes
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1">
+            Capacidad integral en taller y campo para fabricación y montaje electromecánico.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs text-slate-300">
+          <div class="p-4 bg-[#071126] border border-[#1c305c] rounded">
+            <p class="font-bold text-white mb-1 text-sm">Montaje de Equipos</p>
+            <p class="text-slate-400">Montaje, instalación, alineación láser, nivelación y puesta en marcha de maquinaria industrial.</p>
+          </div>
+          <div class="p-4 bg-[#071126] border border-[#1c305c] rounded">
+            <p class="font-bold text-white mb-1 text-sm">Tuberías y Soportes</p>
+            <p class="text-slate-400">Fabricación y montaje de tuberías de proceso, soportería tipo piso, colgante y estructural.</p>
+          </div>
+          <div class="p-4 bg-[#071126] border border-[#1c305c] rounded">
+            <p class="font-bold text-white mb-1 text-sm">Tanques en Acero Inoxidable</p>
+            <p class="text-slate-400">Fabricación y soldadura sanitaria de tanques en acero inoxidable y diversos materiales.</p>
+          </div>
+          <div class="p-4 bg-[#071126] border border-[#1c305c] rounded">
+            <p class="font-bold text-white mb-1 text-sm">Izaje y Traslado de Equipos</p>
+            <p class="text-slate-400">Servicios certificados de maniobras, izaje especializado y reubicación de líneas completas.</p>
+          </div>
+          <div class="p-4 bg-[#071126] border border-[#1c305c] rounded">
+            <p class="font-bold text-white mb-1 text-sm">Mantenimiento Mecánico</p>
+            <p class="text-slate-400">Mantenimiento preventivo y correctivo, pruebas mecánicas, ajustes y comisionamiento en planta.</p>
+          </div>
+          <div class="p-4 bg-[#071126] border border-[#1c305c] rounded">
+            <p class="font-bold text-white mb-1 text-sm">Piezas y Guardas de Seguridad</p>
+            <p class="text-slate-400">Fabricación a medida de guardas de protección mecánica, piezas especiales y suministro de materiales.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICIO 5: MODELADO BIM Y DOCUMENTACIÓN TÉCNICA -->
+      <section class="bg-[#0b1736] border border-[#1c305c] rounded-lg p-6 sm:p-8 shadow-xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5">
+            <ImagePlaceholder 
+              label="Modelado BIM / Ruteo de Cableado" 
+              height="h-56 sm:h-64" 
+              note="Ruteo 3D de tuberías, charolas y soportes"
+            />
+          </div>
+          <div class="lg:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 px-2.5 py-1 bg-cyan-950/80 border border-cyan-400/40 text-cyan-300 text-xs font-bold uppercase rounded">
+              Especialidad 05
+            </div>
+            <h2 class="text-xl sm:text-2xl font-bold text-white">
+              Trayectorias de Cableado y Modelado BIM
+            </h2>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Implementamos metodología <strong class="text-white font-semibold">BIM (Building Information Modeling)</strong> para la ingeniería de detalle: modelado tridimensional de charolas, tuberías conduit, gabinetes y canalizaciones antes de ingresar a campo.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 pt-2">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                Detección oportuna de interferencias con tuberías de proceso y estructuras existentes.
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                Planos detallados con cortes de ruta digital y analógica hacia tableros de control.
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                Típicos de soportería normalizados y listados exactos de materiales (BOM).
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ================= 3. VALOR PARA EL ADMINISTRADOR DE PROYECTOS ================= -->
+    <section class="bg-[#060f24] text-white rounded-lg p-6 sm:p-10 shadow-xl border border-[#1c305c]">
+      <div class="max-w-3xl mb-8">
+        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Gestión Integral</span>
+        <h2 class="text-2xl sm:text-3xl font-bold mt-1">
+          Valor para el Administrador de Proyectos
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-300 mt-2">
+          Gestionamos proyectos industriales de forma integral, combinando ingeniería especializada, supervisión técnica, ejecución electromecánica y soporte continuo.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="p-4 rounded-lg bg-[#0b1838] border border-[#1f376b]">
+          <p class="font-bold text-sm text-cyan-300 mb-1">Reducción de Riesgos</p>
+          <p class="text-xs text-slate-300">Minimizamos riesgos técnicos y operativos mediante validación previa y pruebas exhaustivas.</p>
+        </div>
+        <div class="p-4 rounded-lg bg-[#0b1838] border border-[#1f376b]">
+          <p class="font-bold text-sm text-cyan-300 mb-1">Control de Tiempos y Costos</p>
+          <p class="text-xs text-slate-300">Alineación estricta al cronograma y presupuesto con la metodología basada en PMI.</p>
+        </div>
+        <div class="p-4 rounded-lg bg-[#0b1838] border border-[#1f376b]">
+          <p class="font-bold text-sm text-cyan-300 mb-1">Coordinación entre Disciplinas</p>
+          <p class="text-xs text-slate-300">Sinergia efectiva entre especialistas eléctricos, mecánicos, de control y seguridad.</p>
+        </div>
+        <div class="p-4 rounded-lg bg-[#0b1838] border border-[#1f376b]">
+          <p class="font-bold text-sm text-cyan-300 mb-1">Cumplimiento y Seguridad</p>
+          <p class="text-xs text-slate-300">Apego irrestricto a normativas oficiales de seguridad industrial y estándares de planta.</p>
+        </div>
+        <div class="p-4 rounded-lg bg-[#0b1838] border border-[#1f376b] sm:col-span-2 lg:col-span-2">
+          <p class="font-bold text-sm text-cyan-300 mb-1">Un Solo Integrador Responsable</p>
+          <p class="text-xs text-slate-300">Cero conflictos entre contratistas: nosotros asumimos la responsabilidad total del proyecto desde el concepto hasta la puesta en marcha.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. MARCAS Y ALIANZAS ================= -->
+    <section class="bg-[#0b1736] border border-[#1c305c] p-6 sm:p-10 rounded-lg shadow-xl text-center">
+      <h3 class="text-xl font-bold text-white uppercase tracking-wide mb-2">
+        Integradores Autorizados y Marcas Homologadas
+      </h3>
+      <p class="text-xs text-slate-400 max-w-xl mx-auto mb-8">
+        Garantizamos interoperabilidad técnica y respaldo oficial de los fabricantes líderes de la industria.
+      </p>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div class="p-4 bg-[#071126] border border-[#1c305c] rounded flex flex-col justify-center">
+          <span class="font-bold text-xs text-slate-200">Rockwell Automation</span>
+          <span class="text-[10px] text-cyan-400 mt-1">Allen-Bradley</span>
+        </div>
+        <div class="p-4 bg-[#071126] border border-[#1c305c] rounded flex flex-col justify-center">
+          <span class="font-bold text-xs text-slate-200">Wonderware / AVEVA</span>
+          <span class="text-[10px] text-cyan-400 mt-1">InTouch / System Platform</span>
+        </div>
+        <div class="p-4 bg-[#071126] border border-[#1c305c] rounded flex flex-col justify-center">
+          <span class="font-bold text-xs text-slate-200">Schneider Electric</span>
+          <span class="text-[10px] text-cyan-400 mt-1">Modicon / Power</span>
+        </div>
+        <div class="p-4 bg-[#071126] border border-[#1c305c] rounded flex flex-col justify-center">
+          <span class="font-bold text-xs text-slate-200">Danfoss</span>
+          <span class="text-[10px] text-cyan-400 mt-1">VLT / VACON Drives</span>
+        </div>
+        <div class="p-4 bg-[#071126] border border-[#1c305c] rounded flex flex-col justify-center">
+          <span class="font-bold text-xs text-slate-200">Mitsubishi Electric</span>
+          <span class="text-[10px] text-cyan-400 mt-1">PLC & Motion</span>
+        </div>
+        <div class="p-4 bg-[#071126] border border-[#1c305c] rounded flex flex-col justify-center">
+          <span class="font-bold text-xs text-slate-200">Balluff & CSIA</span>
+          <span class="text-[10px] text-cyan-400 mt-1">Sensórica & Estándares</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. CTA FINAL ================= -->
+    <section class="bg-gradient-to-r from-[#061129] via-[#091b42] to-[#061129] border-l-4 border-cyan-400 border-y border-r border-[#1c305c] p-6 sm:p-8 rounded-lg shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div>
+        <h3 class="text-lg font-bold text-white">
+          ¿Necesitas una propuesta o levantamiento en planta?
+        </h3>
+        <p class="text-xs text-slate-300 mt-1">
+          Nuestros ingenieros de proyectos se coordinarán contigo para revisar alcances y especificaciones.
+        </p>
+      </div>
+      <a 
+        href="/contacto"
+        class="bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-extrabold uppercase tracking-wider text-xs px-8 py-3.5 rounded shadow-lg shadow-cyan-400/25 transition duration-200 shrink-0 transform hover:-translate-y-0.5 active:translate-y-0"
+      >
+        SOLICITAR COTIZACIÓN
+      </a>
+    </section>
+
+  </div>
+</Layout>

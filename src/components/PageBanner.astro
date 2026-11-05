@@ -1,0 +1,41 @@
+---
+// ====================================================================================
+// COMPONENTE ASTRO: src/components/PageBanner.astro
+// ====================================================================================
+
+interface Props {
+  title: string;
+  parent?: {
+    title: string;
+    href: string;
+  };
+}
+
+const { title, parent } = Astro.props;
+---
+
+<div class="bg-gradient-to-r from-[#08122a] via-[#0e1d44] to-[#08122a] border-b border-[#1b2d56] py-5 sm:py-7 shadow-inner">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <span class="w-1.5 h-6 bg-cyan-400 rounded-full"></span>
+      <h1 class="text-xl sm:text-2xl font-bold text-white font-['Dosis',sans-serif] uppercase tracking-wider break-words">
+        {title}
+      </h1>
+    </div>
+    <ol class="flex flex-wrap items-center text-xs text-slate-400 gap-x-2 gap-y-1">
+      <li>
+        <a href="/" class="hover:text-cyan-400 transition">Inicio</a>
+      </li>
+      <li class="text-slate-600">/</li>
+      {parent && (
+        <>
+          <li>
+            <a href={parent.href} class="hover:text-cyan-400 transition">{parent.title}</a>
+          </li>
+          <li class="text-slate-600">/</li>
+        </>
+      )}
+      <li class="text-cyan-400 font-semibold">{title}</li>
+    </ol>
+  </div>
+</div>

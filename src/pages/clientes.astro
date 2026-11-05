@@ -1,0 +1,319 @@
+---
+// ====================================================================================
+// PÁGINA: src/pages/clientes.astro
+// ====================================================================================
+
+import Layout from "../layouts/Layout.astro";
+import PageBanner from "../components/PageBanner.astro";
+import ImagePlaceholder from "../components/ImagePlaceholder.astro";
+
+const clientes = [
+  {
+    nombre: "Nestlé México",
+    sector: "Industria de Alimentos y Nutrición",
+    detalle:
+      "Sistemas de producción por lotes, control de recetas y modernización de líneas de proceso.",
+  },
+  {
+    nombre: "Grupo Modelo México",
+    sector: "Industria Cervecera y Bebidas",
+    detalle:
+      "Automatización de silos, fermentación, ruteo de fluidos y sistemas de supervisión SCADA.",
+  },
+  {
+    nombre: "Coca-Cola FEMSA",
+    sector: "Embotellado y Distribución Industrial",
+    detalle:
+      "Integración de tableros PLC, variadores de frecuencia y control de líneas de embotellado.",
+  },
+  {
+    nombre: "Unilever",
+    sector: "Alimentos y Consumo Masivo",
+    detalle:
+      "Dosificación, mezclado industrial y trazabilidad bajo estrictas normas de inocuidad.",
+  },
+  {
+    nombre: "Mondelēz International",
+    sector: "Confitería y Snacks",
+    detalle:
+      "Control y monitoreo en tiempo real de líneas de extrusión, horneado y empaque.",
+  },
+  {
+    nombre: "L'Oréal México",
+    sector: "Industria Cosmética y Capilar",
+    detalle:
+      "Automatización de reactores, pailería sanitaria en acero inoxidable y control de dosificación.",
+  },
+  {
+    nombre: "IDEAL (Grupo Carso)",
+    sector: "Infraestructura y Procesos",
+    detalle:
+      "Instalaciones electromecánicas, canalización estructurada y sistemas de monitoreo.",
+  },
+  {
+    nombre: "Colgate-Palmolive",
+    sector: "Cuidado Personal y Químico",
+    detalle:
+      "Centros de Control de Motores (CCM) e ingeniería de instalaciones eléctricas en baja tensión.",
+  },
+];
+
+const alianzas = [
+  {
+    nombre: "Rockwell Automation",
+    tipo: "System Integrator Member",
+    cert: "Allen-Bradley / FactoryTalk",
+  },
+  {
+    nombre: "Wonderware / AVEVA",
+    tipo: "Registered System Integrator",
+    cert: "InTouch & System Platform",
+  },
+  {
+    nombre: "Schneider Electric",
+    tipo: "Alliance Partner",
+    cert: "Modicon & Power Solutions",
+  },
+  { nombre: "Danfoss", tipo: "Authorized Partner", cert: "VLT & VACON Drives" },
+  {
+    nombre: "Mitsubishi Electric",
+    tipo: "Authorized Integrator",
+    cert: "iQ-R Series & Motion Control",
+  },
+  {
+    nombre: "Balluff",
+    tipo: "Technology Partner",
+    cert: "Sensórica y Conectividad IO-Link",
+  },
+  {
+    nombre: "CSIA",
+    tipo: "Miembro Activo",
+    cert: "Control System Integrators Association",
+  },
+];
+---
+
+<Layout
+  title="Softlution! – Nuestros Clientes | Automatización Industrial"
+  description="Empresas líderes multinacionales que confían en Softlution: Nestlé México, Grupo Modelo, Coca-Cola FEMSA, Unilever, Mondelēz, L'Oréal e IDEAL."
+>
+  <PageBanner title="Nuestros Clientes" />
+
+  <div
+    class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-10 sm:space-y-12"
+  >
+    <!-- ================= 1. ENCABEZADO Y PROPUESTA ================= -->
+    <section
+      class="bg-[#0b1736] border border-[#1c305c] p-6 sm:p-10 rounded-lg shadow-xl"
+    >
+      <div
+        class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-6 mb-6 border-b border-[#1c305c]"
+      >
+        <div>
+          <span
+            class="inline-block px-3 py-1 bg-cyan-950/80 border border-cyan-400/40 text-cyan-300 text-xs font-bold uppercase tracking-wider rounded-full mb-3 shadow-xs"
+          >
+            Trayectoria y Respaldo Técnico
+          </span>
+          <h1 class="text-2xl sm:text-4xl font-bold text-white tracking-tight">
+            Empresas que Confían en nosotros<span
+              class="text-cyan-400 font-extrabold">!</span
+            >
+          </h1>
+          <p
+            class="text-xs sm:text-sm text-slate-400 mt-2 max-w-2xl leading-relaxed"
+          >
+            Hemos desarrollado con éxito diversas soluciones tecnológicas para
+            firmas multinacionales líderes en las disciplinas de Alimentos y
+            Bebidas, Cosmética, Química y Manufactura.
+          </p>
+        </div>
+        <div class="shrink-0">
+          <ImagePlaceholder
+            label="Logo ASF (ASF-LOGO.png)"
+            width="w-32 sm:w-36"
+            height="h-20 sm:h-24"
+            note="Softlution"
+          />
+        </div>
+      </div>
+
+      <p class="text-slate-300 text-sm leading-relaxed">
+        <span class="drop-cap text-cyan-400">N</span>uestra sólida trayectoria
+        como integradores electromecánicos nos ha permitido ganar la confianza a
+        largo plazo de las plantas industriales más exigentes de México.
+        Proveemos soluciones llave en mano respaldadas por altos estándares de
+        calidad, seguridad de maquinaria e inocuidad alimentaria.
+      </p>
+    </section>
+
+    <!-- ================= 2. GRID DE CLIENTES ================= -->
+    <section class="space-y-6">
+      <div
+        class="border-b border-[#1c305c] pb-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+      >
+        <div>
+          <h2
+            class="text-xl sm:text-2xl font-bold text-white flex items-center"
+          >
+            <span
+              class="w-2.5 h-6 bg-cyan-400 inline-block mr-2.5 shrink-0 rounded-xs"
+            ></span>
+            <span>Principales Clientes Industriales</span>
+          </h2>
+          <p class="text-xs text-slate-400 pl-5 mt-0.5">
+            Proyectos de ingeniería, control de procesos y ejecución
+            electromecánica en operación continua.
+          </p>
+        </div>
+        <span
+          class="text-xs font-semibold text-cyan-400/80 self-start sm:self-center"
+        >
+          Sector Alimentos, Bebidas y Cuidado Personal
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {
+          clientes.map((cliente) => (
+            <div class="bg-[#0b1736] border border-[#1c305c] rounded-lg p-5 shadow-lg hover:border-cyan-400 transition group flex flex-col justify-between">
+              <div>
+                <div class="h-24 bg-[#071126] border border-[#1c305c] rounded flex items-center justify-center p-3 mb-4 group-hover:bg-[#0c1f4a] group-hover:border-cyan-400/40 transition">
+                  <span class="font-bold text-sm sm:text-base text-slate-200 group-hover:text-cyan-300 transition text-center">
+                    {cliente.nombre}
+                  </span>
+                </div>
+                <span class="inline-block px-2 py-0.5 bg-cyan-950/80 text-[10px] font-bold text-cyan-300 uppercase tracking-wide rounded mb-2 border border-cyan-500/20">
+                  {cliente.sector}
+                </span>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  {cliente.detalle}
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-[#1c305c] flex items-center justify-between text-[11px] text-slate-400">
+                <span>Cliente Homologado</span>
+                <span class="text-cyan-400 font-bold">✓ Activo</span>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- ================= 3. INTEGRADORES AUTORIZADOS ================= -->
+    <section
+      class="bg-[#0b1736] border border-[#1c305c] p-6 sm:p-10 rounded-lg shadow-xl space-y-6"
+    >
+      <div class="border-b border-[#1c305c] pb-4 text-center sm:text-left">
+        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400"
+          >Alianzas Tecnológicas</span
+        >
+        <h2 class="text-2xl font-bold text-white mt-1">
+          Somos Integradores Autorizados
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-1 max-w-3xl">
+          Contamos con certificaciones y acreditaciones directas de los
+          fabricantes líderes en automatización, robótica, motion control y
+          software SCADA a nivel global.
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+      >
+        {
+          alianzas.map((alianza) => (
+            <div class="p-4 bg-[#071126] border border-[#1c305c] rounded-lg hover:border-cyan-400 transition shadow-md">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-bold text-sm text-white">{alianza.nombre}</h3>
+                <span class="w-2 h-2 rounded-full bg-cyan-400" />
+              </div>
+              <p class="text-xs text-cyan-300 font-semibold mb-1">
+                {alianza.tipo}
+              </p>
+              <p class="text-[11px] text-slate-400">{alianza.cert}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- ================= 4. SECTORES INDUSTRIALES ================= -->
+    <section
+      class="bg-[#060f24] text-white p-6 sm:p-10 rounded-lg shadow-xl border border-[#1c305c]"
+    >
+      <div class="max-w-2xl mb-8">
+        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400"
+          >Cobertura de Mercado</span
+        >
+        <h2 class="text-2xl sm:text-3xl font-bold mt-1">
+          Sectores Productivos que Atendemos
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-300 mt-2">
+          Soluciones de automatización personalizadas y alineadas a los
+          estándares de cada industria.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 text-xs">
+        <div
+          class="p-4 rounded-lg bg-[#0b1838] border border-[#1f376b] space-y-1"
+        >
+          <p class="font-bold text-sm text-cyan-300">Alimentos y Nutrición</p>
+          <p class="text-slate-300 leading-relaxed">
+            Fórmulas lácteas, polvos, silos, bacheo de recetas e higiene
+            sanitaria.
+          </p>
+        </div>
+        <div
+          class="p-4 rounded-lg bg-[#0b1838] border border-[#1f376b] space-y-1"
+        >
+          <p class="font-bold text-sm text-cyan-300">Bebidas y Embotellado</p>
+          <p class="text-slate-300 leading-relaxed">
+            Cerveza, refrescos, ruteo de fluidos, líneas de envasado y control
+            SCADA.
+          </p>
+        </div>
+        <div
+          class="p-4 rounded-lg bg-[#0b1838] border border-[#1f376b] space-y-1"
+        >
+          <p class="font-bold text-sm text-cyan-300">Química y Cosmética</p>
+          <p class="text-slate-300 leading-relaxed">
+            Reactores, dosificación de solventes, tubería sanitaria y áreas
+            clasificadas.
+          </p>
+        </div>
+        <div
+          class="p-4 rounded-lg bg-[#0b1838] border border-[#1f376b] space-y-1"
+        >
+          <p class="font-bold text-sm text-cyan-300">Manufactura y Energía</p>
+          <p class="text-slate-300 leading-relaxed">
+            Centros de Control de Motores (CCM), tableros PLC y subestaciones en
+            baja tensión.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. CTA FINAL ================= -->
+    <section
+      class="bg-gradient-to-r from-[#061129] via-[#091b42] to-[#061129] border-l-4 border-cyan-400 border-y border-r border-[#1c305c] p-6 sm:p-8 rounded-lg shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6"
+    >
+      <div>
+        <h3 class="text-lg font-bold text-white">
+          ¿Deseas conocer más sobre nuestras referencias y proyectos ejecutados?
+        </h3>
+        <p class="text-xs text-slate-300 mt-1">
+          Contáctanos para presentarte soluciones técnicas similares a los
+          requerimientos de tu planta.
+        </p>
+      </div>
+      <a
+        href="/contacto"
+        class="bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-extrabold uppercase tracking-wider text-xs px-8 py-3.5 rounded shadow-lg shadow-cyan-400/25 transition duration-200 shrink-0 transform hover:-translate-y-0.5 active:translate-y-0"
+      >
+        CONTACTAR ESPECIALISTA
+      </a>
+    </section>
+  </div>
+</Layout>

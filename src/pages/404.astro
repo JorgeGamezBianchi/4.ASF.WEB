@@ -1,0 +1,36 @@
+---
+// ====================================================================================
+// PÁGINA DE ERROR: src/pages/404.astro
+// ====================================================================================
+
+import Layout from '../layouts/Layout.astro';
+import PageBanner from '../components/PageBanner.astro';
+---
+
+<Layout title="404 – Página No Encontrada | Softlution!">
+  <PageBanner title="Página No Encontrada" />
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-16 text-center">
+    <div class="bg-[#0b1736] border border-[#1c305c] p-8 sm:p-12 rounded-lg shadow-xl space-y-6">
+      <h2 class="text-7xl font-extrabold text-cyan-400 font-['Dosis',sans-serif]">404</h2>
+      <h3 class="text-xl font-bold text-white">Lo sentimos, la página que buscas no existe o ha sido movida.</h3>
+      <p class="text-sm text-slate-300 max-w-md mx-auto">
+        Puedes regresar al portal principal de Softlution o consultar nuestros servicios y canales de contacto.
+      </p>
+      <div class="pt-4 flex justify-center gap-4">
+        <a 
+          href="/" 
+          class="bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-extrabold text-xs uppercase px-6 py-2.5 rounded transition tracking-wider shadow-md shadow-cyan-400/25"
+        >
+          Ir al Inicio
+        </a>
+        <a 
+          href="/contacto" 
+          class="bg-[#0e1d44] hover:bg-[#122659] text-cyan-300 font-bold text-xs uppercase px-6 py-2.5 rounded border border-[#1f376b] transition tracking-wider"
+        >
+          Contacto
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

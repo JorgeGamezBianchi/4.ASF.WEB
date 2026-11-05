@@ -1,0 +1,49 @@
+---
+// ====================================================================================
+// PLANTILLA MAESTRA DE ASTRO: src/layouts/Layout.astro
+// ====================================================================================
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Softlution! – Automatización Industrial",
+  description = "Softlution - Automation Solutions Factory S.A. de C.V. Especialistas en Automatización Industrial, Control, SCADA y Software a Medida."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://softlution.com.mx/wp-content/uploads/2019/02/firma_softlution_2018_03.png" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+
+    <!-- Google Fonts: Open Sans y Dosis -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body class="min-h-screen flex flex-col bg-[#070e22] text-[#cbd5e1] antialiased selection:bg-cyan-400 selection:text-slate-950 font-['Open_Sans',sans-serif]">
+    
+    <!-- ENCABEZADO PERSISTENTE EN TODAS LAS PÁGINAS -->
+    <Header />
+
+    <!-- CONTENEDOR DINÁMICO DE PÁGINAS (SLOT) -->
+    <main class="flex-grow">
+      <slot />
+    </main>
+
+    <!-- PIE DE PÁGINA PERSISTENTE EN TODAS LAS PÁGINAS -->
+    <Footer />
+
+  </body>
+</html>

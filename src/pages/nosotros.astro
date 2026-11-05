@@ -1,0 +1,464 @@
+---
+// ====================================================================================
+// PÁGINA: src/pages/nosotros.astro
+// ====================================================================================
+
+import Layout from '../layouts/Layout.astro';
+import PageBanner from '../components/PageBanner.astro';
+import ImagePlaceholder from '../components/ImagePlaceholder.astro';
+---
+
+<Layout 
+  title="Softlution! – Quienes Somos | Automatización Industrial"
+  description="Conoce a Softlution (Automation Solutions Factory): expertos en instrumentación, control y automatización de procesos en la industria productiva y de Alimentos y Bebidas."
+>
+  <PageBanner title="Quienes Somos" />
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-10 sm:space-y-12">
+    
+    <!-- ================= 1. INTRODUCCIÓN Y PRESENTACIÓN ================= -->
+    <section class="bg-[#0b1736] border border-[#1c305c] p-6 sm:p-10 rounded-lg shadow-xl">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-6 mb-8 border-b border-[#1c305c]">
+        <div>
+          <span class="inline-block px-3 py-1 bg-cyan-950/80 border border-cyan-400/40 text-cyan-300 text-xs font-bold uppercase tracking-wider rounded-full mb-3 shadow-xs">
+            Automation Solutions Factory S.A. de C.V.
+          </span>
+          <h1 class="text-2xl sm:text-4xl font-bold text-white tracking-tight">
+            Ingeniería y Soluciones en Automatización Industrial
+          </h1>
+          <p class="text-xs sm:text-sm text-slate-400 mt-2">
+            Equilibrio de capacidad tecnológica y capital humano para la industria productiva.
+          </p>
+        </div>
+        <div class="shrink-0 flex items-center gap-3">
+          <ImagePlaceholder 
+            label="Logo ASF (ASF-LOGO.png)" 
+            width="w-32 sm:w-36" 
+            height="h-20 sm:h-24" 
+            note="Softlution"
+          />
+        </div>
+      </div>
+
+      <div class="space-y-5 text-slate-300 text-sm leading-relaxed">
+        <p>
+          <span class="drop-cap text-cyan-400">S</span>
+          <strong class="text-white font-semibold">oftlution!</strong> es resultado del equilibrio de capacidad tecnológica y de capital humano quienes conformamos una empresa con amplia experiencia en la integración de soluciones en Sistemas de Instrumentación, Control y Automatización de Procesos en la industria productiva.
+        </p>
+
+        <p>
+          Hemos desarrollado con éxito, durante nuestra trayectoria, diversas soluciones tecnológicas para empresas en diversas disciplinas de la industria de <strong class="text-white font-semibold">Alimentos y Bebidas</strong>, así como en los sectores químico, manufacturero y de procesos continuos. Entre nuestros principales clientes se encuentran firmas globales de la talla de <strong class="text-cyan-300">Nestlé México</strong>, <strong class="text-cyan-300">Grupo Modelo</strong> y <strong class="text-cyan-300">Unilever</strong>.
+        </p>
+
+        <!-- Cita Destacada / Lema Rector -->
+        <blockquote class="my-6 p-5 bg-[#061026] border-l-4 border-cyan-400 rounded-r text-slate-200 italic text-sm sm:text-base border-y border-r border-[#1c305c]">
+          “Un solo integrador, un solo responsable, total control del proyecto.”
+          <span class="block text-xs not-italic font-bold text-cyan-400 mt-1.5 uppercase tracking-wider">
+            — Filosofía de Operación Softlution!
+          </span>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ================= 2. MISIÓN & VISIÓN ================= -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- MISIÓN -->
+      <div class="bg-[#0b1736] border border-[#1c305c] rounded-lg p-6 sm:p-8 shadow-xl relative overflow-hidden flex flex-col justify-between">
+        <div class="absolute top-0 left-0 w-full h-1 bg-cyan-400"></div>
+        <div>
+          <div class="w-12 h-12 rounded-lg bg-cyan-950/80 border border-cyan-400/30 text-cyan-400 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold text-white uppercase tracking-wide mb-3 flex items-center gap-2">
+            <span>Misión</span>
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed italic bg-[#061026] p-4 rounded border border-[#1c305c]">
+            “Mantener la confianza de nuestros clientes como proveedor de soluciones tecnológicas seguras para las personas, innovadoras y confiables para la industria productiva de Alimentos y Bebidas.”
+          </p>
+        </div>
+        <p class="text-[11px] text-cyan-400 mt-4 uppercase tracking-wider font-semibold">
+          Compromiso con la Calidad y Seguridad
+        </p>
+      </div>
+
+      <!-- VISIÓN -->
+      <div class="bg-[#0b1736] border border-[#1c305c] rounded-lg p-6 sm:p-8 shadow-xl relative overflow-hidden flex flex-col justify-between">
+        <div class="absolute top-0 left-0 w-full h-1 bg-blue-500"></div>
+        <div>
+          <div class="w-12 h-12 rounded-lg bg-blue-950/80 border border-blue-500/30 text-blue-400 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold text-white uppercase tracking-wide mb-3 flex items-center gap-2">
+            <span>Visión</span>
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed italic bg-[#061026] p-4 rounded border border-[#1c305c]">
+            “Ser el mejor socio de negocios en Servicios de Ingeniería y tecnología, comprometidos con la implementación de soluciones imprescindibles para nuestros clientes actuales y futuros.”
+          </p>
+        </div>
+        <p class="text-[11px] text-blue-400 mt-4 uppercase tracking-wider font-semibold">
+          Alianza Estratégica a Largo Plazo
+        </p>
+      </div>
+
+    </section>
+
+    <!-- ================= 3. VALORES CORPORATIVOS ================= -->
+    <section class="bg-[#0b1736] border border-[#1c305c] p-6 sm:p-10 rounded-lg shadow-xl">
+      <div class="border-b border-[#1c305c] pb-4 mb-8 text-center sm:text-left">
+        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Nuestros Pilares</span>
+        <h2 class="text-2xl font-bold text-white mt-1">Valores Fundamentales</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-1">
+          Principios que guían nuestras decisiones, proyectos y relaciones con clientes y colaboradores.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <!-- Honestidad -->
+        <div class="p-5 rounded-lg border border-[#1c305c] bg-[#071126] hover:border-cyan-400 transition group shadow-md">
+          <div class="flex items-center gap-2.5 mb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+            <h3 class="font-bold text-white text-base group-hover:text-cyan-300 transition">Honestidad</h3>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Actuamos y promovemos la <strong class="text-slate-200">honestidad</strong> como nuestro valor principal para generar confianza mutua y relaciones comerciales duraderas.
+          </p>
+        </div>
+
+        <!-- Compromiso -->
+        <div class="p-5 rounded-lg border border-[#1c305c] bg-[#071126] hover:border-blue-400 transition group shadow-md">
+          <div class="flex items-center gap-2.5 mb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-400"></span>
+            <h3 class="font-bold text-white text-base group-hover:text-blue-300 transition">Compromiso</h3>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Nuestro objetivo es asegurar el éxito de nuestros clientes, siendo 100% conscientes de las obligaciones y alcances de cada acuerdo firmado.
+          </p>
+        </div>
+
+        <!-- Dedicación -->
+        <div class="p-5 rounded-lg border border-[#1c305c] bg-[#071126] hover:border-cyan-400 transition group shadow-md">
+          <div class="flex items-center gap-2.5 mb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+            <h3 class="font-bold text-white text-base group-hover:text-cyan-300 transition">Dedicación</h3>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            En Softlution! trabajamos con absoluta entrega y rigor técnico en el cumplimiento de los objetivos de nuestros clientes y los propios.
+          </p>
+        </div>
+
+        <!-- Confianza -->
+        <div class="p-5 rounded-lg border border-[#1c305c] bg-[#071126] hover:border-blue-400 transition group shadow-md">
+          <div class="flex items-center gap-2.5 mb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-400"></span>
+            <h3 class="font-bold text-white text-base group-hover:text-blue-300 transition">Confianza</h3>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Generamos confianza porque somos congruentes con lo que pensamos, decimos y hacemos, buscando siempre el bien común con apego a nuestra ética.
+          </p>
+        </div>
+
+        <!-- Lealtad -->
+        <div class="p-5 rounded-lg border border-[#1c305c] bg-[#071126] hover:border-cyan-400 transition group shadow-md">
+          <div class="flex items-center gap-2.5 mb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+            <h3 class="font-bold text-white text-base group-hover:text-cyan-300 transition">Lealtad</h3>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Hacia nuestros clientes y colaboradores valoramos los esfuerzos de todos y cada uno de los que hacen posible brindar el mejor de los servicios.
+          </p>
+        </div>
+
+        <!-- Profesionalismo -->
+        <div class="p-5 rounded-lg border border-[#1c305c] bg-[#071126] hover:border-blue-400 transition group shadow-md">
+          <div class="flex items-center gap-2.5 mb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-400"></span>
+            <h3 class="font-bold text-white text-base group-hover:text-blue-300 transition">Profesionalismo</h3>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Trabajamos con excelencia agregando valor tangible en cada actividad técnica y operativa para garantizar resultados certificados.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 4. NUESTRO DÍA A DÍA ================= -->
+    <section class="bg-[#0b1736] border border-[#1c305c] p-6 sm:p-10 rounded-lg shadow-xl">
+      <div class="border-b border-[#1c305c] pb-4 mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Filosofía de Trabajo</span>
+        <h2 class="text-2xl font-bold text-white mt-1">Nuestro Día a Día</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-1">
+          Compromisos diarios que respaldan la ejecución técnica y operativa en cada proyecto.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <div class="flex items-start gap-4 p-4 rounded-lg bg-[#071126] border border-[#1c305c]">
+          <div class="w-8 h-8 rounded-full bg-cyan-950 border border-cyan-400/40 text-cyan-400 flex items-center justify-center shrink-0 mt-0.5">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <div class="text-xs sm:text-sm text-slate-300">
+            <strong class="text-white font-semibold block text-sm">Soluciones Electromecánicas Alineadas</strong>
+            Proveer soluciones electromecánicas para procesos productivos rigurosamente alineadas a los estándares de calidad, seguridad e inocuidad de la industria de Alimentos y Bebidas.
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-4 rounded-lg bg-[#071126] border border-[#1c305c]">
+          <div class="w-8 h-8 rounded-full bg-blue-950 border border-blue-400/40 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <div class="text-xs sm:text-sm text-slate-300">
+            <strong class="text-white font-semibold block text-sm">Compromiso con la Productividad</strong>
+            Hacer nuestro el compromiso de mejora continua, productividad y eficiencia de los procesos de nuestros clientes en sus respectivas plantas.
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-4 rounded-lg bg-[#071126] border border-[#1c305c]">
+          <div class="w-8 h-8 rounded-full bg-cyan-950 border border-cyan-400/40 text-cyan-400 flex items-center justify-center shrink-0 mt-0.5">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <div class="text-xs sm:text-sm text-slate-300">
+            <strong class="text-white font-semibold block text-sm">Mejora Continua Organizacional</strong>
+            Mejorar continuamente nuestras prácticas organizacionales para incrementar nuestra capacidad en soluciones integrales con calidad y puntual cumplimiento.
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-4 rounded-lg bg-[#071126] border border-[#1c305c]">
+          <div class="w-8 h-8 rounded-full bg-blue-950 border border-blue-400/40 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <div class="text-xs sm:text-sm text-slate-300">
+            <strong class="text-white font-semibold block text-sm">Productividad e Información en Tiempo Real</strong>
+            Desarrollar sistemas de productividad y adquisición de datos en tiempo real que permitan conocer el desempeño del proceso, facilitar la toma oportuna de decisiones y optimizar la operación industrial.
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-4 rounded-lg bg-[#071126] border border-[#1c305c]">
+          <div class="w-8 h-8 rounded-full bg-cyan-950 border border-cyan-400/40 text-cyan-400 flex items-center justify-center shrink-0 mt-0.5">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <div class="text-xs sm:text-sm text-slate-300">
+            <strong class="text-white font-semibold block text-sm">Desarrollo Humano y Técnico</strong>
+            Brindar a nuestros colaboradores oportunidades de desarrollo profesional y humano, formando equipos técnicos altamente competentes y comprometidos con una ejecución segura y de alto valor.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 5. BUENAS PRÁCTICAS ================= -->
+    <section class="bg-[#0b1736] border border-[#1c305c] p-6 sm:p-10 rounded-lg shadow-xl">
+      <div class="border-b border-[#1c305c] pb-4 mb-8 text-center sm:text-left">
+        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Criterios de Calidad</span>
+        <h2 class="text-2xl font-bold text-white mt-1">Buenas Prácticas</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-1">
+          La metodología que garantiza proyectos exitosos desde el diagnóstico hasta la entrega final.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="bg-[#071126] border border-[#1c305c] p-5 rounded-lg flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-cyan-400 uppercase">Paso 01</span>
+              <span class="text-xs text-slate-500 font-mono">Diagnóstico</span>
+            </div>
+            <h3 class="font-bold text-sm text-white mb-1">Determinar las Necesidades de nuestros Socios</h3>
+            <p class="text-xs text-slate-400 italic mt-2">
+              “Cuando se necesita el criterio y diagnóstico de los expertos.”
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#071126] border border-[#1c305c] p-5 rounded-lg flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-blue-400 uppercase">Paso 02</span>
+              <span class="text-xs text-slate-500 font-mono">Factibilidad</span>
+            </div>
+            <h3 class="font-bold text-sm text-white mb-1">Evaluar Factibilidad y Aceptación</h3>
+            <p class="text-xs text-slate-400 italic mt-2">
+              “¿Lo podemos hacer?, ¿Qué?, ¿Para qué?, ¿Cómo?”
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#071126] border border-[#1c305c] p-5 rounded-lg flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-cyan-400 uppercase">Paso 03</span>
+              <span class="text-xs text-slate-500 font-mono">Eficiencia</span>
+            </div>
+            <h3 class="font-bold text-sm text-white mb-1">Hacerlo Bien y a la Primera</h3>
+            <p class="text-xs text-slate-400 italic mt-2">
+              “Calidad y eficiencia dependen de una sólida planeación técnica.”
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#071126] border border-[#1c305c] p-5 rounded-lg flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-blue-400 uppercase">Paso 04</span>
+              <span class="text-xs text-slate-500 font-mono">Valor Agregado</span>
+            </div>
+            <h3 class="font-bold text-sm text-white mb-1">Superar las Expectativas del Cliente</h3>
+            <p class="text-xs text-slate-400 italic mt-2">
+              “¿Por qué no? Siempre que sea posible, aportar soluciones con valor agregado.”
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#071126] border border-[#1c305c] p-5 rounded-lg flex flex-col justify-between md:col-span-2 lg:col-span-1">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-cyan-400 uppercase">Paso 05</span>
+              <span class="text-xs text-slate-500 font-mono">Satisfacción</span>
+            </div>
+            <h3 class="font-bold text-sm text-white mb-1">Evidenciar la Satisfacción del Cliente</h3>
+            <p class="text-xs text-slate-400 italic mt-2">
+              “¿Hicimos bien?, ¿Hicimos mal?, ¿Qué podemos mejorar continuamente?”
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 6. METODOLOGÍA DE TRABAJO PMI ================= -->
+    <section class="bg-[#0b1736] border border-[#1c305c] p-6 sm:p-10 rounded-lg shadow-xl">
+      <div class="border-b border-[#1c305c] pb-4 mb-8 text-center sm:text-left">
+        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Gestión Profesional</span>
+        <h2 class="text-2xl font-bold text-white mt-1">Metodología de Trabajo basada en PMI</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-1">
+          Alineamos nuestros proyectos a los estándares del Project Management Institute para lograr entregables de calidad en tiempo, costo y alcance.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        
+        <!-- Fase 1 -->
+        <div class="p-4 rounded-lg bg-[#071126] border border-[#1c305c] text-center relative group hover:border-cyan-400 transition">
+          <div class="w-10 h-10 rounded-full bg-cyan-950 border border-cyan-400/40 text-cyan-400 font-bold flex items-center justify-center mx-auto mb-3 text-sm">
+            1
+          </div>
+          <h3 class="font-bold text-sm text-white mb-1">Inicio</h3>
+          <p class="text-xs text-slate-400">Definición preliminar y autorización formal del proyecto.</p>
+        </div>
+
+        <!-- Fase 2 -->
+        <div class="p-4 rounded-lg bg-[#071126] border border-[#1c305c] text-center relative group hover:border-blue-400 transition">
+          <div class="w-10 h-10 rounded-full bg-blue-950 border border-blue-400/40 text-blue-400 font-bold flex items-center justify-center mx-auto mb-3 text-sm">
+            2
+          </div>
+          <h3 class="font-bold text-sm text-white mb-1">Planificación</h3>
+          <p class="text-xs text-slate-400">Definición y planificación detallada de ingeniería y recursos.</p>
+        </div>
+
+        <!-- Fase 3 -->
+        <div class="p-4 rounded-lg bg-[#071126] border border-[#1c305c] text-center relative group hover:border-cyan-400 transition">
+          <div class="w-10 h-10 rounded-full bg-cyan-950 border border-cyan-400/40 text-cyan-400 font-bold flex items-center justify-center mx-auto mb-3 text-sm">
+            3
+          </div>
+          <h3 class="font-bold text-sm text-white mb-1">Ejecución</h3>
+          <p class="text-xs text-slate-400">Llevar a cabo el plan de gestión del proyecto en campo y taller.</p>
+        </div>
+
+        <!-- Fase 4 -->
+        <div class="p-4 rounded-lg bg-[#071126] border border-[#1c305c] text-center relative group hover:border-blue-400 transition">
+          <div class="w-10 h-10 rounded-full bg-blue-950 border border-blue-400/40 text-blue-400 font-bold flex items-center justify-center mx-auto mb-3 text-sm">
+            4
+          </div>
+          <h3 class="font-bold text-sm text-white mb-1">Control</h3>
+          <p class="text-xs text-slate-400">Medir, supervisar y controlar regularmente el avance del proyecto.</p>
+        </div>
+
+        <!-- Fase 5 -->
+        <div class="p-4 rounded-lg bg-[#071126] border border-[#1c305c] text-center relative group hover:border-cyan-400 transition">
+          <div class="w-10 h-10 rounded-full bg-cyan-950 border border-cyan-400/40 text-cyan-400 font-bold flex items-center justify-center mx-auto mb-3 text-sm">
+            5
+          </div>
+          <h3 class="font-bold text-sm text-white mb-1">Cierre</h3>
+          <p class="text-xs text-slate-400">Formalizar la aceptación, comisionamiento y entrega al cliente.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 7. ALIANZAS Y CERTIFICACIONES ================= -->
+    <section class="bg-[#0b1736] border border-[#1c305c] p-6 sm:p-10 rounded-lg shadow-xl">
+      <div class="border-b border-[#1c305c] pb-4 mb-6 text-center sm:text-left">
+        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Alianzas Estratégicas</span>
+        <h2 class="text-2xl font-bold text-white mt-1">Integradores Autorizados</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-1">
+          Capacidad técnica respaldada y certificada por las marcas líderes a nivel mundial.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+        <div class="p-3 bg-[#071126] border border-[#1c305c] rounded flex flex-col items-center justify-center">
+          <span class="font-bold text-xs text-slate-200">Rockwell Automation</span>
+          <span class="text-[10px] text-cyan-400 mt-1">System Integrator</span>
+        </div>
+        <div class="p-3 bg-[#071126] border border-[#1c305c] rounded flex flex-col items-center justify-center">
+          <span class="font-bold text-xs text-slate-200">Wonderware / AVEVA</span>
+          <span class="text-[10px] text-cyan-400 mt-1">Registered Integrator</span>
+        </div>
+        <div class="p-3 bg-[#071126] border border-[#1c305c] rounded flex flex-col items-center justify-center">
+          <span class="font-bold text-xs text-slate-200">Schneider Electric</span>
+          <span class="text-[10px] text-cyan-400 mt-1">Alliance Partner</span>
+        </div>
+        <div class="p-3 bg-[#071126] border border-[#1c305c] rounded flex flex-col items-center justify-center">
+          <span class="font-bold text-xs text-slate-200">Danfoss</span>
+          <span class="text-[10px] text-cyan-400 mt-1">Authorized Drives</span>
+        </div>
+        <div class="p-3 bg-[#071126] border border-[#1c305c] rounded flex flex-col items-center justify-center">
+          <span class="font-bold text-xs text-slate-200">Mitsubishi Electric</span>
+          <span class="text-[10px] text-cyan-400 mt-1">System Integrator</span>
+        </div>
+        <div class="p-3 bg-[#071126] border border-[#1c305c] rounded flex flex-col items-center justify-center">
+          <span class="font-bold text-xs text-slate-200">Balluff & CSIA</span>
+          <span class="text-[10px] text-cyan-400 mt-1">Sensors & Standards</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 8. CALL TO ACTION ================= -->
+    <section class="bg-gradient-to-r from-[#061129] via-[#091b42] to-[#061129] text-white p-6 sm:p-10 rounded-lg shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6 border-l-4 border-cyan-400 border-y border-r border-[#1c305c]">
+      <div>
+        <h3 class="text-xl sm:text-2xl font-bold uppercase tracking-wide">
+          ¿Tienes un proyecto de automatización en puerta?
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-xl">
+          Nuestros directores comercial y de proyectos están listos para evaluar la factibilidad técnica y operativa de tu planta.
+        </p>
+      </div>
+      <a 
+        href="/contacto"
+        class="bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-extrabold uppercase tracking-wider text-xs px-8 py-3.5 rounded shadow-lg shadow-cyan-400/25 transition duration-200 shrink-0 transform hover:-translate-y-0.5 active:translate-y-0"
+      >
+        CONTACTO DIRECTO
+      </a>
+    </section>
+
+  </div>
+</Layout>

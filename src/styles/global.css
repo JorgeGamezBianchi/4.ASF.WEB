@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  body {
+    background-color: #070e22;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-weight: 600;
+  }
+}
+
+/* ====================================================================================
+   PALETA CORPORATIVA INDUSTRIAL: AZUL TECNOLÓGICO Y CONTRASTES DE ALTA PRECISIÓN
+   - Fondo Base: Azul Marino Profundo / Acero Industrial (#070e22 / #0b1736)
+   - Contraste Lógico (Reemplazo del Rojo): Cian Eléctrico / Azul Hielo (#00d2ff / #38bdf8)
+   - Acentos Secundarios: Azul Real (#2563eb / #1d4ed8)
+   ==================================================================================== */
+
+.theme-cyan {
+  color: #00d2ff;
+}
+
+.bg-theme-cyan {
+  background-color: #00d2ff;
+}
+
+.border-theme-cyan {
+  border-color: #00d2ff;
+}
+
+.drop-cap {
+  float: left;
+  font-size: 2.25rem;
+  line-height: 1;
+  font-weight: 700;
+  padding-right: 0.35rem;
+  color: #00d2ff;
+}
