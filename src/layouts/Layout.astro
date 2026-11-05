@@ -5,6 +5,7 @@
 
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import PrivacyModal from '../components/PrivacyModal.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -44,6 +45,9 @@ const {
 
     <!-- PIE DE PÁGINA PERSISTENTE EN TODAS LAS PÁGINAS -->
     <Footer />
+
+    <!-- MODAL EMERGENTE DE AVISO DE PRIVACIDAD -->
+    <PrivacyModal />
 
   </body>
 </html>
