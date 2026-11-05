@@ -3,97 +3,107 @@
 // PÁGINA PRINCIPAL DE ASTRO: src/pages/index.astro
 // ====================================================================================
 
-import Layout from '../layouts/Layout.astro';
-import ImagePlaceholder from '../components/ImagePlaceholder.astro';
+import Layout from "../layouts/Layout.astro";
+import ImagePlaceholder from "../components/ImagePlaceholder.astro";
 ---
 
-<Layout 
+<Layout
   title="Softlution! – Automatización Industrial | Inicio"
   description="Soluciones integrales en automatización industrial, control de procesos, SCADA y tableros eléctricos en México."
 >
   <div class="w-full">
     <!-- ================= BANNER HERO A PANTALLA COMPLETA ================= -->
-    <section class="relative w-full bg-[#050b1a] border-b border-[#1b2d56] overflow-hidden shadow-2xl">
-      <img 
-        src="/images/banner2.png" 
-        alt="Automation Solutions Factory - Softlution!" 
-        class="w-full h-auto block" 
+    <section
+      class="relative w-full bg-[#050b1a] border-b border-[#1b2d56] overflow-hidden shadow-2xl"
+    >
+      <img
+        src="/images/banner2.png"
+        alt="Automation Solutions Factory - Softlution!"
+        class="w-full h-auto block"
         loading="eager"
       />
     </section>
 
     <!-- ================= CONTENIDO HOME A PANTALLA COMPLETA ================= -->
-    <div id="seccion-interior" class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 scroll-mt-20">
-      
+    <div
+      id="seccion-interior"
+      class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 scroll-mt-20"
+    >
       <!-- CONTENEDOR PRINCIPAL FLUIDO -->
-      <div class="w-full bg-[#0b1736] border border-[#1c305c] p-4 sm:p-8 md:p-10 rounded-lg shadow-xl space-y-8">
-        
+      <div
+        class="w-full bg-[#0b1736] border border-[#1c305c] p-4 sm:p-8 md:p-10 rounded-lg shadow-xl space-y-8"
+      >
         <!-- Logo de la empresa -->
         <div class="flex justify-center sm:justify-start">
-          <ImagePlaceholder 
-            label="Logo ASF (ASF-LOGO.png)" 
-            width="w-48 sm:w-56" 
-            height="h-32 sm:h-36" 
+          <ImagePlaceholder
+            label="Logo ASF (ASF-LOGO.png)"
+            width="w-48 sm:w-56"
+            height="h-32 sm:h-36"
             note="Automation Solutions Factory"
           />
         </div>
 
         <!-- Título de Galería / Proyectos -->
         <div class="border-b-2 border-[#1c305c] pb-4">
-          <h2 class="text-lg sm:text-2xl font-bold text-white flex items-center">
-            <span class="w-2.5 h-6 bg-cyan-400 inline-block mr-2.5 shrink-0 rounded-xs"></span>
+          <h2
+            class="text-lg sm:text-2xl font-bold text-white flex items-center"
+          >
+            <span
+              class="w-2.5 h-6 bg-cyan-400 inline-block mr-2.5 shrink-0 rounded-xs"
+            ></span>
             <span>Galería de Proyectos e Implementaciones Industriales</span>
           </h2>
           <p class="text-xs sm:text-sm text-slate-400 mt-1 pl-5">
-            Desarrollos en automatización, sistemas SCADA y control de procesos en planta.
+            Desarrollos en automatización, sistemas SCADA y control de procesos
+            en planta.
           </p>
         </div>
 
         <!-- Grid de Proyectos e Implementaciones -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          <ImagePlaceholder 
-            label="SOFTLUTION 2018 FEMSA" 
-            height="h-56 sm:h-64" 
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
+        >
+          <ImagePlaceholder
+            label="SOFTLUTION 2018 FEMSA"
+            height="h-56 sm:h-64"
             note="Sistema de automatización en planta de bebidas"
           />
-          <ImagePlaceholder 
-            label="Proyecto 1 - Integración de Línea" 
-            height="h-56 sm:h-64" 
+          <ImagePlaceholder
+            label="Proyecto 1 - Integración de Línea"
+            height="h-56 sm:h-64"
             note="Arquitectura de control y tableros PLC"
           />
-          <ImagePlaceholder 
-            label="Proyecto 2 - Paneles de Control" 
-            height="h-56 sm:h-64" 
+          <ImagePlaceholder
+            label="Proyecto 2 - Paneles de Control"
+            height="h-56 sm:h-64"
             note="Interfaz HMI / SCADA en tiempo real"
           />
-          <ImagePlaceholder 
-            label="Proyecto 3 - Dosificación y Bacheo" 
-            height="h-56 sm:h-64" 
+          <ImagePlaceholder
+            label="Proyecto 3 - Dosificación y Bacheo"
+            height="h-56 sm:h-64"
             note="Instrumentación y ruteo de fluidos"
           />
-          <ImagePlaceholder 
-            label="Proyecto 4 - Puesta en Marcha" 
-            height="h-56 sm:h-64" 
+          <ImagePlaceholder
+            label="Proyecto 4 - Puesta en Marcha"
+            height="h-56 sm:h-64"
             note="Sistemas de alta confiabilidad"
           />
-          <ImagePlaceholder 
-            label="Proyecto 5 - Control y Monitoreo" 
-            height="h-56 sm:h-64" 
+          <ImagePlaceholder
+            label="Proyecto 5 - Control y Monitoreo"
+            height="h-56 sm:h-64"
             note="Supervisión remota y adquisición de datos"
           />
         </div>
 
         <!-- Banner de Sistemas Permitidos -->
         <div class="mt-8 pt-6 border-t border-[#1c305c]">
-          <ImagePlaceholder 
-            label="Banner: Sistemas Permitidos (Sistemas-permitidos.png)" 
-            height="h-24 sm:h-28" 
+          <ImagePlaceholder
+            label="Banner: Sistemas Permitidos (Sistemas-permitidos.png)"
+            height="h-24 sm:h-28"
             note="Plataformas y estándares certificados"
           />
         </div>
-
       </div>
-
     </div>
   </div>
 </Layout>
